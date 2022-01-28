@@ -134,4 +134,5 @@ cp_py_env
 
 # Config
 config.py
+credentials.py
 
