@@ -127,3 +127,11 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Environments
+cp_js_env/
+cp_py_env
+
+# Config
+config.py
+

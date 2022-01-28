@@ -1,0 +1,74 @@
+.container-1, .container-2,.container-3, .container-4, .container-5 {
+    border: 1px solid black;
+    width: 75%;
+    text-align: center;
+    margin: 0 auto;
+}
+.flex-box-container-1, .flex-box-container-2,
+.flex-box-container-3, .flex-box-container-4,
+.flex-box-row-1, .flex-box-row-2, .flex-box-row-3 {
+    display: flex;
+    border: 1px solid black;
+    padding: 10px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+.flex-box-container-1 div {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+}
+
+
+.flex-box-container-2 img {
+    margin: 10px;
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.7);
+    width: 100px;
+    height: 100px;
+}
+
+.flex-box-container-3 img {
+    width: 100px;
+    height: 100px;
+}
+
+.flex-box-container-3 img:hover {
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.7);
+}
+
+.flex-box-row-1, .flex-box-row-2 {
+    background: url('../images/bg.jpg');
+    background-size: cover;
+    color: #afffff
+}
+
+.flex-box-row-1 div {
+    border: 1px solid black;
+    padding: 10px;
+    flex: 1;
+    height: 300px;
+    text-align: center;
+}
+
+.flex-box-row-1 img {
+    border: 1px solid black;
+    width: 25%;
+    padding: 10px;
+}
+
+.flex-box-row-2 button {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.flex-box-row-2 div {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+table {
+    border: 1px solid black;
+    padding: 5px;
+}

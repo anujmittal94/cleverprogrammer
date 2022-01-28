@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+    </head>
+    <body>
+        <p id="someText"></p>
+        <script src="home.js" charset="utf-8"></script>
+        <script type="text/javascript">
+            let students = [
+                {
+                    "name": "Anon",
+                    "age" : 32,
+                    "height": 205,
+                },
+                {
+                    "name": "X",
+                    "age" : 23,
+                    "height": 165
+                }
+            ]
+
+            let students2 = `[
+                {
+                    "name": "Anon",
+                    "age" : 32,
+                    "height": 205
+                },
+                {
+                    "name": "X",
+                    "age" : 23,
+                    "height": 165
+                }
+            ]`
+
+            console.log(JSON.parse(students2));
+
+            console.log(students)
+        </script>
+    </body>
+</html>

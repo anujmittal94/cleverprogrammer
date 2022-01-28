@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" href="static/css/styles.css">
+
+        <title>Challenges</title>
+    </head>
+    <body>
+        <div class="container-1">
+            <h2>Challenge 1: Age in Days</h2>
+            <div class="flex-box-container-1">
+                <div>
+                    <button class="btn btn-primary" onclick="ageInDays()">Click Me</button>
+                </div>
+                <div>
+                    <button class="btn btn-danger" onclick="reset()">Reset</button>
+                </div>
+            </div>
+            <div class="flex-box-container-1">
+                <div id='age-result'></div>
+            </div>
+        </div>
+        <div class="container-2">
+            <h2>Challenge 2: Generate Cat</h2>
+            <div class="flex-box-container-2">
+                <div>
+                    <button class="btn btn-success" id="cat-gen" onclick="generateCat()">Generate Cat</button>
+                </div>
+            </div>
+            <div class="flex-box-container-2" id="cat-pen"></div>
+        </div>
+        <div class="container-3">
+            <h2>Challenge 3: Rock, Paper, Scissors</h2>
+            <div class="flex-box-container-3" id="rps-div">
+                <img src="static/images/ro.jpg" id="ro" onclick="rps(this)">
+                <img src="static/images/pa.jpg" id="pa" onclick="rps(this)">
+                <img src="static/images/sc.jpg" id="sc" onclick="rps(this)">
+            </div>
+        </div>
+        <div class="container-4">
+            <h2>Challenge 4: Buttons</h2>
+            <div class="flex-box-container-4" id="buttons">
+                <form action="">
+                    <select name="backdrop" id="background" onchange="buttonChange(this)">
+                        <option value="random">Random</option>
+                        <option value="red">Red</option>
+                        <option value="green">Green</option>
+                        <option value="reset">Reset</option>
+                    </select>
+                </form>
+
+                <button class="btn btn-primary">Wee</button>
+                <button class="btn btn-danger">Yahoo</button>
+                <button class="btn btn-warning">Google</button>
+                <button class="btn btn-success">Facebook</button>
+
+            </div>
+        </div>
+        <div class="container-5">
+            <h2>Challenge 5: Blackjack</h2>
+            <h3><span id="bj-result">Let's Play</span></h3>
+
+            <div class="flex-box-row-1">
+                <div id="human-box">
+                    <h2>You: <span id="human-result">0</span></h2>
+                </div>
+                <div id="bot-box">
+                    <h2>Dealer: <span id="bot-result">0</span></h2>
+                </div>
+            </div>
+
+            <div class="flex-box-row-2">
+                <div>
+                    <button class="btn-lg btn-primary me-2" id="bg-hit">Hit</button>
+                    <button class="btn-lg btn-warning me-2" id="bg-stand">Stand</button>
+                    <button class="btn-lg btn-danger" id="bg-deal">Deal</button>
+                </div>
+            </div>
+
+            <div class="flex-box-row-3">
+                <table class="table">
+                    <tr>
+                        <th>Wins</th>
+                        <th>Losses</th>
+                        <th>Draws</th>
+                    </tr>
+                    <tr>
+                        <td><span id="wins">0</span></td>
+                        <td><span id="losses">0</span></td>
+                        <td><span id="draws">0</span></td>
+                    </tr>
+                </table>
+
+            </div>
+        </div>
+        <script src="static/js/challenges.js" charset="utf-8"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    </body>
+</html>

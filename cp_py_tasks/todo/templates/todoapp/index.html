@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="row mt-4">
+    <div class="col">
+        <h2>Add Item</h2>
+
+        <form class="form-inline" action="{% url 'add' %}" method="post">
+            {% csrf_token %}
+            <div class="mb-3">
+                <label for="exampleInputTask" class="form-label">Task</label>
+                <input type="text" class="form-control" id="exampleInputTask1"
+                name='content' aria-describedby="taskHelp">
+                <div id="taskHelp" class="form-text">Your Task.</div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </form>
+    </div>
+
+<div class="row mt-4">
+    <div class="col">
+        <ul class="list-group">
+            {% for item in items %}
+            <li class="list-group-item">
+                {{ item.text }}
+                <div class="float-right">
+                    <form action="{% url 'del' item.id %}" method="post">
+                        {% csrf_token %}
+                        <button type="submit" class="btn btn-sm btn-danger">Del</button>
+                    </form>
+                </div>
+
+            </li>
+            {% endfor %}
+        </ul>
+
+    </div>
+</div>
+{% endblock %}
